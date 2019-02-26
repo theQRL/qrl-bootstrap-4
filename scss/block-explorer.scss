@@ -1,0 +1,87 @@
+@import url(https://use.fontawesome.com/releases/v5.0.10/css/all.css);
+
+$enable-grid-classes:true;
+$primary:#0a0724;
+$secondary:#dc245d;
+$success:#7ed322;
+$danger:#ff3d3e;
+$info:#4a90e2;
+$warning:#ffc107;
+$light:#f3f3f3;
+$dark:#979797;
+$enable-gradients:true;
+$spacer:1rem;
+$border-width:1px;
+$btn-border-radius:0;
+$border-radius:0rem;
+$border-radius-lg:0rem;
+$border-radius-sm:0rem;
+$enable-shadows:true;
+$font-family-sans-serif: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:  Hack, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+span.json-formatter-key {
+  color: $info !important;
+}
+
+span.json-formatter-null {
+  color: $dark !important;
+}
+
+span.json-formatter-bracket {
+  color: $secondary !important;
+}
+
+span.json-formatter-number {
+  color: $primary !important;
+}
+
+.json-formatter-row .json-formatter-string,
+.json-formatter-row .json-formatter-stringifiable {
+  white-space: normal !important;
+  font-family: Hack;
+  font-size: 0.7em;
+  color: $primary !important;
+}
+
+.json-formatter-key,
+.json-formatter-string,
+.json-formatter-stringifiable,
+.json-formatter-number,
+.json-formatter-constructor-name,
+.json-formatter-null {
+  font-family: Hack;
+  font-size: 0.7em;
+}
+
+.loaded {
+  display: none;
+}
+
+.toggle {
+  display: none;
+}
+
+.table .text {
+  position: relative;
+}
+
+.table .text span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: absolute;
+  width: 100%;
+}
+
+.text:before {
+  content: '';
+  display: inline-block;
+}
+
+.tooltip {
+  pointer-events: none;
+}
